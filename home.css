@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(-125deg, darksalmon, darkorchid);
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-one {
+    padding: 10px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.content-pair {
+    display: flex;
+    flex-wrap: wrap;  /* Agar konten bisa membungkus jika ruang tidak cukup */
+    justify-content: space-between;
+    align-items: flex-start;  /* Menyelaraskan konten ke atas */
+    gap: 20px;  /* Memberikan jarak antar elemen */
+}
+
+.image-container {
+    flex: 1;
+    min-width: 250px;  /* Menentukan lebar minimum agar gambar tidak terlalu kecil */
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    min-width: 250px;  /* Menentukan lebar minimum untuk teks */
+    padding-left: 20px;
+    color: black;
+}
+
+.text-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.text-container p {
+    font-size: 16px;
+}
+
+
+.section-two {
+    background-image: linear-gradient(-125deg, gold, blueviolet);
+    padding: 10px;
+}
+
+.section-three {
+    background-image: linear-gradient(-125deg, yellowgreen, blue);
+}
+
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 12px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.top:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, .5);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 179, 1);
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; 
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+ul li img {
+    max-width: 100%;  
+    height: auto; 
+    display: block;
+    border-radius: 5px;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+ul li {
+    position: relative; /* Tambahkan ini */
+}
+
+ul li ul.dropdown {
+    background-color: beige;
+    position: absolute;
+    display: none;
+    top: 100%; 
+    left: 0;
+    width: auto;
+    padding: 5px 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+ul li ul.dropdown li a {
+    color: #333;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+ul li ul.dropdown li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#footer img{
+    background: #f7f7f7;
+    padding: 0;
+  }
+
